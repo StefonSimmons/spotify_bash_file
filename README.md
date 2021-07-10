@@ -1,6 +1,6 @@
 # Spotify Playlist Buddy (BASH FILE)
 
-A script to run the [Spotify Buddy](https://github.com/StefonSimmons/spotify_playlist_buddy) program.
+A script to run the [Spotify Buddy](https://github.com/StefonSimmons/spotify_playlist_buddy) program from the terminal.
 
 ## Setup
 
