@@ -13,7 +13,7 @@ A script to run the [Spotify Buddy](https://github.com/StefonSimmons/spotify_pla
 ```bash
 echo $SHELL
 ```
-- Assign your absolute path to the <code>create_playlist.py</code> file directory to the DIR variable as directed in the script
+- Assign your absolute path to the <code>run_it.py</code> file directory to the DIR variable as directed in the script
 
 > Example
 
@@ -26,18 +26,18 @@ DIR=~/terminal-apps/spotify-app
 ```bash
 # FOR BASH
 function spotify (){
-    DIR=#<absolute path to folder of create_playlist module>
+    DIR=#<absolute path to folder of run_it module>
     if [ "$1" == 'cp' ]; then
         echo "Creating $2..."
-        python $DIR/create_playlist.py $1 $2 $3
+        python $DIR/run_it.py $1 $2 $3
     elif [ "$1" == "s" ]; then
         echo "Searching for $2..."
-        python $DIR/create_playlist.py $1 $2
+        python $DIR/run_it.py $1 $2
     elif [ "$1" == "list" ]; then
         echo "Getting Playlists..."
-        python $DIR/create_playlist.py $1
+        python $DIR/run_it.py $1
     elif [ "$1" == "play" ] || [ "$1" == "pause" ]; then
-        python $DIR/create_playlist.py $1
+        python $DIR/run_it.py $1
     fi
 }
 
@@ -46,18 +46,18 @@ function spotify (){
 
 # FOR ZSH
 function spotify (){
-  DIR=#<absolute path to folder of create_playlist module>
+  DIR=#<absolute path to folder of run_it module>
   if [[ "$1" == 'cp' ]]; then
     echo "Creating $2..."
-    python $DIR/create_playlist.py $1 $2 $3
+    python $DIR/run_it.py $1 $2 $3
   elif [[ "$1" == "s" ]]; then
     echo "Searching for $2..."
-    python $DIR/create_playlist.py $1 $2
+    python $DIR/run_it.py $1 $2
   elif [[ "$1" == "list" ]]; then
     echo "Getting Playlists..."
-    python $DIR/create_playlist.py $1
+    python $DIR/run_it.py $1
   elif [[ "$1" == "play" ]] || [[ "$1" == "pause" ]]; then
-    python $DIR/create_playlist.py $1
+    python $DIR/run_it.py $1
   fi
 }
 
